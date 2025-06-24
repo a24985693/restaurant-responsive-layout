@@ -1,0 +1,33 @@
+body {
+  background: $background-color;
+}
+
+.login {
+  max-width: 300px;
+
+  .login-btn-group {
+    display: flex;
+    justify-content: space-between;
+
+    .button-register, .button-login{
+      width: 125px;
+      color: #fff;
+      font-size: 14px;
+      height: 32px;
+      border:none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .button-register {
+      background: $gray;
+      text-align: center;
+      line-height: 32px;
+      text-decoration: none;
+    }
+
+    .button-login {
+      background: $secondary-color;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+body {
+  background: #EFE9E7;
+}
+
+.register {
+  max-width: 620px;
+
+  .register-content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .register-rule {
+    flex: 1;
+    line-height: 1.2rem;
+  
+    h4 {
+      font-size: 18px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  form {
+    flex: 1;
+    
+    .password {
+      margin-bottom: 8px;
+    }
+
+    .button-register {
+      width: 125px;
+      height: 32px;
+      display: block;
+      margin-left: auto;
+      border: none;
+      background: $secondary-color;
+      border-radius: 3px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .register {
+    .register-content {
+      flex-direction: column;
+    }
+  }
+}

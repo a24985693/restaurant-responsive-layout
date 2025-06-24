@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./stylesheets/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ========== 網站標頭 ========== -->
+  <div id="header">
+  </div>
+
+  <!-- ========== 購物頁面 ========== -->
+  <div class="container product-page">
+    <!-- 側欄 -->
+    <aside class="product-sidebar">
+      <h2 class="sidebar-title">
+        <i class="fa-solid fa-leaf"></i>線上訂購
+      </h2>
+      <!-- 商品分類 -->
+      <ul class="category-list">
+        <li><a href="#">全部 (23)</a></li>
+        <li><a href="#">只愛吃薯條 (18)</a></li>
+        <li><a href="#">加熱就可食 (1)</a></li>
+        <li><a href="#">不敗漢堡系列 (4)</a></li>
+      </ul>
+    </aside>
+
+    <!-- 主要區塊 -->
+    <main>
+      <!-- 搜尋及結帳 -->
+      <div class="toolbar">
+        <div class="search">
+          <input type="text" placeholder="搜尋商品">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="checkout">
+          <a href="#" class="checkout-link">結帳去</a>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+
+      <!-- 商品卡片群組 -->
+      <div class="product">
+        <!-- 商品卡片 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/product_1.png"
+              srcset="./assets/product_1.png 1x, ./assets/product_1@2x.png 2x"
+              alt="經典漢堡套餐">
+          </div>
+
+          <div class="product-content">
+            <h3 class="product-title">經典漢堡套餐</h3>
+            <p class="product-subtitle">Classic Hamburger Package</p>
+            <p class="product-price">$120</p>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i>加入購物車
+            </button>
+          </div>
+        </div>
+
+        <!-- 商品卡片 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/product_2.png"
+              srcset="./assets/product_2.png 1x, ./assets/product_2@2x.png 2x"
+              alt="英俊香腸">
+          </div>
+
+          <div class="product-content">
+            <h3 class="product-title">英俊香腸</h3>
+            <p class="product-subtitle">Handsome Sausage</p>
+            <p class="product-price">$1,024</p>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i>加入購物車
+            </button>
+          </div>
+        </div>
+
+        <!-- 商品卡片 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/product_3.png"
+              srcset="./assets/product_3.png 1x, ./assets/product_3@2x.png 2x"
+              alt="漢堡兄弟">
+          </div>
+
+          <div class="product-content">
+            <h3 class="product-title">漢堡兄弟</h3>
+            <p class="product-subtitle">Hamburg Brothers</p>
+            <p class="product-price">$792</p>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i>加入購物車
+            </button>
+          </div>
+        </div>
+
+        <!-- 商品卡片 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/product_4.png"
+              srcset="./assets/product_4.png 1x, ./assets/product_4@2x.png 2x"
+              alt="經典漢堡套餐">
+          </div>
+
+          <div class="product-content">        
+            <h3 class="product-title">經典漢堡套餐</h3>
+            <p class="product-subtitle">Classic Hamburger Package</p>
+            <p class="product-price">$120</p>
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i>加入購物車
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ========== 網站頁尾 ========== -->
+  <div id="footer">
+  </div>
+
+  <script src="https://kit.fontawesome.com/a9364419c2.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

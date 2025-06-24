@@ -1,0 +1,353 @@
+// 特色介紹
+.feature {
+  background-color: $background-color;
+
+  .feature-container {
+    padding: 50px 62px;
+    color: $primary-color;
+    
+    h2 {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+      position: relative;
+  
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 8%;
+        height: 2px;
+        transform: translateY(-50%);
+        background-color: $primary-color;
+      }
+  
+      &::before {
+        left: 25%;
+      }
+  
+      &::after {
+        right: 25%;
+      }
+    }
+  
+  }
+
+  .feature-content {
+    display: flex;
+    gap: 60px;
+  }  
+
+  .feature-card {
+    text-align: center;
+    height: auto;
+    flex: 1;
+
+    img {
+      border-radius: 50%;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: left;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+// 主廚介紹
+.chef {
+  background-color: $primary-color;
+
+  .chef-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0 42px 0 42px;
+    color: white;
+  }
+
+  .chef-img {
+    flex: 1;
+
+    img {
+      max-width: 100%;
+      height: 460px;
+      object-fit: cover;
+    }
+  }
+
+  .chef-content {
+    flex: 1;
+    
+    h3 {
+      margin-bottom: 16px;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+// 顧客評價
+.comment {
+  background-color: $background-color;
+
+  .comment-container {
+    color: $primary-color;
+    padding: 50px 42px;
+  
+    h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .comment-content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .comment-card {
+    display: flex;
+    gap: 13px;
+    flex: 1;
+
+    img {
+      border-radius: 50%;
+      height: 67px;
+      width: 67px;
+    }
+
+    h3 {
+      margin-bottom: 22px;
+      margin-top: 20px;
+    }
+
+    .content-text {
+      margin-bottom: 16px;
+    }
+
+    .content-name {
+      color: rgba(61,17,0,0.75);
+      text-align: right;
+    }
+  }
+}
+
+// 地圖表單
+.map {
+  background-color: $background-color;
+
+  .map-container {
+    padding: 50px 42px;
+    color: $primary-color;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+  
+  }
+
+  .map-content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .map-img {
+    flex: 1;
+
+    img {
+      max-width: 100%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    label {
+      margin-bottom: 4px;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    input:not([type="radio"]) {
+      margin-bottom: 12px;
+      height: 32px;
+      display: block;
+      background-color: #FFFFFF;
+      border: 1px solid #CCCCCC;
+      box-shadow: inset 0px 1px 0px 0px #ECECEC;
+      border-radius: 3px;
+      padding: 0 14px;
+      font-size: 16px;
+    }
+
+    .vegetarian {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      legend {
+        margin-bottom: 4px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      label {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+
+      input {
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        margin: 0 36px 0 6px;
+        padding: 0;
+        box-shadow: none;
+      }
+    }
+
+    .btn-group {
+      margin-left: auto;
+    }
+
+    .cancel, .send {
+      border-radius: 3px;
+      border: none;
+      height: 32px;
+      width: 70px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .cancel {
+      background-color: $gray;
+    }
+
+    .send {
+      background-color: $secondary-color;
+      margin-left: 11px;
+    }
+  }
+}
+
+
+@media(max-width: 768px) {
+  .feature {
+    .feature-container {
+      padding: 50px 28px;
+  
+      h2 {
+        &::before,
+        &::after {
+          height: 0;
+        }
+      }
+    }
+
+    .feature-content {
+      gap: 50px;
+    }
+  }
+  
+  .chef {
+    .chef-container {
+      flex-direction: column;
+      padding: 30px;
+    }
+
+    .chef-img {
+      img {
+        height: 350px;
+      }
+    }
+  }
+
+  .comment {
+    .comment-container {
+      padding: 50px 10px;
+    }
+  }
+
+  .map {
+    .map-container {
+      padding: 50px 10px;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .feature {
+    .feature-container {
+      padding: 50px 30px;
+  
+    }
+
+    .feature-content {
+      flex-direction: column;
+      gap: 30px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  
+  .chef {
+    .chef-container {
+      padding: 0;
+      gap: 30px;
+    }
+  
+    .chef-content {
+      padding: 0 30px 30px 30px;
+    }
+  }
+
+  .comment {
+    .comment-container {
+      padding: 50px 10px;
+    }
+
+    .comment-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  
+  .map {
+    .map-container {
+      padding: 50px 10px;
+    }
+
+    .map-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    form {  
+      .vegetarian {
+        input {
+          height: 24px;
+          width: 24px;
+        }
+      }
+    }
+  }
+}

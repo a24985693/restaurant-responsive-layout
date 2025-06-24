@@ -1,0 +1,55 @@
+.auth-title {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 35px;  
+  color: $primary-color;
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+}
+
+.auth-container {
+  margin: 0 auto 50px auto;
+  padding: 15px;
+  color: $primary-color;
+  border-top: 3px solid $secondary-color;
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.16);
+
+  h3 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    label {
+      margin-bottom: 3px;
+    }
+
+    input {
+      width: 100%;
+      height: 32px;
+      padding: 0 14px;
+      border: 1px solid #CCCCCC;
+      box-shadow: inset 0px 1px 0px 0px #ECECEC;
+      border-radius: 3px;
+    }
+
+    .email {
+      margin-bottom: 16px;
+    }
+
+    a {
+      margin-top: 4px;
+      text-decoration: none;
+      font-size: 14px;
+      color: $secondary-color;
+    }
+  }
+}
